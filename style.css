@@ -136,16 +136,13 @@ footer p { margin: 0; }
   }
   h1 { font-size: 2.5rem; }
 }
-
-/* ---------- Desktop: wider main column, more breathing room ---------- */
+/* ---------- Desktop ---------- */
 @media (min-width: 1200px) {
   main {
     grid-template-columns: 2fr 1fr;
     gap: var(--space-4);
     padding: var(--space-6) var(--space-4);
   }
-}
-/* Projects page: three equal cards on desktop */
-@media (min-width: 1200px) {
   .projects-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .about-grid    { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
