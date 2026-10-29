@@ -145,3 +145,7 @@ footer p { margin: 0; }
     padding: var(--space-6) var(--space-4);
   }
 }
+/* Projects page: three equal cards on desktop */
+@media (min-width: 1200px) {
+  .projects-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
