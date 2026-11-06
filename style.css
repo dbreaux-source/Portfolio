@@ -147,3 +147,21 @@ footer p { margin: 0; }
   .projects-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .about-grid    { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+/* add to style.css */
+.skip-link {
+  position: absolute;
+  left: var(--space-2);
+  top: -48px;
+  background: var(--color-accent);
+  color: var(--color-dark);
+  padding: var(--space-1) var(--space-2);
+  border-radius: 8px;
+  z-index: 10;
+}
+.skip-link:focus { top: var(--space-1); }
+
+a:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 4px;
+}
+nav a[aria-current="page"] { border-bottom: 2px solid var(--color-accent); }
