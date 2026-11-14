@@ -159,9 +159,12 @@ footer p { margin: 0; }
   z-index: 10;
 }
 .skip-link:focus { top: var(--space-1); }
-
-a:focus-visible {
-  outline: 3px solid var(--color-accent);
+a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible {
+  outline: 3px solid var(--color-dark);
   outline-offset: 4px;
 }
+header a:focus-visible { outline-color: var(--color-accent); }
 nav a[aria-current="page"] { border-bottom: 2px solid var(--color-accent); }
