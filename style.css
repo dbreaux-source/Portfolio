@@ -168,3 +168,26 @@ a:focus-visible,
 }
 header a:focus-visible { outline-color: var(--color-accent); }
 nav a[aria-current="page"] { border-bottom: 2px solid var(--color-accent); }
+/* ---------- Contact form ---------- */
+.field { margin-bottom: var(--space-3); }
+
+label { display: block; font-weight: 600; margin-bottom: var(--space-1); }
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: var(--space-1) var(--space-2);
+  font: inherit;
+  color: var(--color-text);
+  background: #fff;
+  border: 2px solid #6b7280;
+  border-radius: 8px;
+}
+
+fieldset { border: 2px solid #6b7280; border-radius: 8px; padding: var(--space-2); margin: 0 0 var(--space-3); }
+legend { font-weight: 600; padding: 0 var(--space-1); }
+.choice { display: block; font-weight: 400; margin-bottom: var(--space-1); }
+
+.error-message { color: #b42318; font-weight: 600; margin: var(--space-1) 0 0; }
+input[aria-invalid="true"], textarea[aria-invalid="true"] { border: 3px solid #b42318; }
+
+button.button { border: 0; font: inherit; font-weight: 600; cursor: pointer; }
